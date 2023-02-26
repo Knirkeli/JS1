@@ -1,0 +1,200 @@
+/*header*/
+header {
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  width: 100%;
+  background-color: #245c64;
+  after: 40px;
+  color: white;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 50px;
+}
+
+header label {
+  display: none;
+}
+
+.header_text {
+  display: flex;
+  align-self: center;
+}
+
+.header_2 {
+  padding-top: 15px;
+  margin-left: 5px;
+}
+
+nav li {
+  display: inline-flex;
+
+  bottom: 0px;
+  position: relative;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-items: space-around;
+}
+
+nav a {
+  color: inherit;
+  text-transform: uppercase;
+  transition: all ease-in-out 300ms;
+}
+
+#menu_checkbox {
+  display: none;
+}
+.burger {
+  display: none;
+}
+
+/* animation */
+
+nav a:hover {
+  color: black;
+}
+
+/*nav media*/
+
+@media (max-width: 700px) {
+  .header_text {
+    display: flex;
+    align-self: center;
+  }
+
+  header label {
+    display: block;
+  }
+  nav,
+  #menu-checkbox {
+    display: none;
+  }
+
+  #menu_checkbox:checked ~ nav {
+    display: block;
+  }
+
+  nav li {
+    display: block;
+  }
+
+  .fa-solid:hover {
+    color: black;
+    transition: all ease-in-out 300ms;
+  }
+
+  nav {
+    position: absolute;
+    background-color: #245c64;
+    left: 0px;
+    z-index: 2;
+    top: 120px;
+  }
+  main {
+    position: relative;
+  }
+}
+
+@media (min-width: 700px) {
+  header {
+    align-items: center;
+  }
+  .exibit {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+/*main*/
+
+main {
+  display: flex;
+  min-height: 1000px;
+  align-content: center;
+  color: blacks;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h3 {
+  color: blacks;
+}
+
+.newsbox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid grey;
+  border-radius: 1rem;
+}
+
+.news_section {
+  min-height: 400px;
+  box-shadow: 0px 0px 8px rgb(0 0 0 / 25%);
+  max-width: 90vw;
+  margin: 0px auto;
+}
+
+.description {
+}
+
+.norway_news {
+  background-color: rgb(237, 248, 248);
+}
+
+.loading {
+  color: black;
+}
+
+.popular_news {
+  background-color: rgb(51, 65, 65);
+}
+.tech_news {
+  background-color: rgb(0, 255, 166);
+}
+
+.sports_news {
+  background-color: aqua;
+}
+
+.world_news {
+  background-color: rgb(86, 129, 129);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.result {
+  margin: 1rem;
+  padding: 1rem;
+  max-width: 200px;
+  background: white;
+  border: 1px solid grey;
+  border-radius: 1rem;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
